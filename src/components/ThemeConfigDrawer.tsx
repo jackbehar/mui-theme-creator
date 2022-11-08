@@ -15,21 +15,26 @@ const ThemeConfigDrawer = () => {
   const dispatch = useDispatch()
 
   const theme = useTheme()
-  const permanent = useMediaQuery(theme.breakpoints.up("sm"))
+  // const permanent = useMediaQuery(theme.breakpoints.up("sm"))
+  const permanent = true
 
   return (
     <Drawer
-      variant={permanent ? "permanent" : "temporary"}
-      anchor="right"
+      // variant={permanent ? "permanent" : "temporary"}
+      variant="permanent"
+      anchor="left"
       sx={{
         width: drawerWidth,
         height: "100vh",
-        maxWidth: "90vw",
+        // maxWidth: "90vw",
+        maxWidth: "100vw",
         '& .MuiDrawer-paper': {
           width: drawerWidth,
           overflowY: "visible",
           zIndex: theme.zIndex.drawer + 2,
-          maxWidth: "90vw",
+          // maxWidth: "90vw",
+          maxWidth: "100vw",
+
         }
       }}
       open={open}

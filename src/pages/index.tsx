@@ -19,23 +19,26 @@ const IndexPage = () => {
           height: "100vh",
         }}>
           <ErrorBoundary>
-            <Box sx={{
+            {/* <Box sx={{
               flex: 1,
               display: "flex",
               flexDirection: "column",
               minWidth: 0,
             }}>
               <Header sx={{
-                backgroundColor: "#000000",
+                backgroundColor: "#ffffff",
                 position: {
                   md: 'static'
-                }
+                },
+                visibility:"hidden"
+                
               }} />
 
               <Box sx={{
                 flex: 1,
                 display: "flex",
                 minHeight: 0,
+                visibility:"hidden"
               }}>
                 <ComponentNavDrawer />
 
@@ -49,12 +52,12 @@ const IndexPage = () => {
                   <MainWindow />
                 </Box>
               </Box>
-            </Box>
+            </Box> */}
 
             <ThemeConfigDrawer />
           </ErrorBoundary>
         </Box>
-        <SmallScreenWarning />
+        {/* <SmallScreenWarning /> */}
         <Tutorial />
       </Layout>
     </HelmetProvider>
